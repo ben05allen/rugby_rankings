@@ -50,6 +50,3 @@ for fixture in results:
 
 for i, (k,v) in enumerate(reversed(sorted(table.items(), key=lambda x: x[1]))):
     print(f'{i + 1:3}. {k.value:15}{v:.2f}  ({old_ranking[k.name]:2})')
-
-
-print(old_ranking)
