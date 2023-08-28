@@ -37,6 +37,9 @@ results = [
     ((Country.FRANCE, 41, Ground.HOME),(Country.AUSTRALIA, 17, Ground.AWAY)),
 ]
 
+old_ranking = {k: i + 1 for i, (k, _) in enumerate(reversed(sorted([(k.name,v) for k, v in table.items()], 
+                                                                   key=lambda x: x[1])))}
+
 for fixture in results:
     (a, a_score, a_home), (b, b_score, b_home) = fixture
     a_pts, b_pts = calculate_points(table[a], table[b], a_score, b_score, a_home, b_home, is_rwc_final=False)
@@ -46,5 +49,7 @@ for fixture in results:
     table[b] = round(table[b] + b_pts, 2)
 
 for i, (k,v) in enumerate(reversed(sorted(table.items(), key=lambda x: x[1]))):
-    print(f'{i + 1}. {k.name} - {v}')
+    print(f'{i + 1:3}. {k.value:15}{v:.2f}  ({old_ranking[k.name]:2})')
 
+
+print(old_ranking)
