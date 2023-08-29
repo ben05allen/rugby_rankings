@@ -44,6 +44,15 @@ old_ranking = {
     )
 }
 
+
+def position_change(old_position: int, new_position: int) -> str:
+    if old_position == new_position:
+        return "-"
+    elif new_position > old_position:
+        return f"-{new_position - old_position}"
+    return f"+{old_position - new_position}"
+
+
 for fixture in results:
     (a, a_score, a_home), (b, b_score, b_home) = fixture
     a_pts, b_pts = calculate_points(
@@ -61,4 +70,7 @@ for fixture in results:
     table[b] = round(table[b] + b_pts, 2)
 
 for i, (k, v) in enumerate(reversed(sorted(table.items(), key=lambda x: x[1]))):
-    print(f"{i + 1:3}. {k.value:15}{v:.2f}  ({old_ranking[k.name]:2})")
+    print(
+        f"{i + 1:3}. {k.value:15}{v:.2f}   "
+        f"({position_change(old_ranking[k.name], i+1):>2})"
+    )
