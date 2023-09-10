@@ -1,21 +1,23 @@
 from points import calculate_points
 from static import Country, Ground
 
+FULL_TABLE = True
+
 table = {
     Country.IRELAND: 91.82,
-    Country.NEW_ZEALAND: 90.77,
-    Country.SOUTH_AFRICA: 89.37,
+    Country.SOUTH_AFRICA: 91.08,
     Country.FRANCE: 89.22,
+    Country.NEW_ZEALAND: 89.06,
     Country.SCOTLAND: 84.01,
-    Country.ENGLAND: 81.53,
     Country.ARGENTIA: 80.86,
+    Country.FIJI: 80.28,
+    Country.ENGLAND: 79.95,
     Country.AUSTRALIA: 79.87,
-    Country.FIJI: 78.70,
     Country.WALES: 78.26,
     Country.GEORGIA: 76.23,
     Country.SAMOA: 76.19,
-    Country.ITALY: 74.63,
-    Country.JAPAN: 74.29,
+    Country.ITALY: 75.63,
+    Country.JAPAN: 73.29,
     Country.TONGA: 70.29,
     Country.PORTUGAL: 68.61,
     Country.URUGUAY: 66.63,
@@ -28,13 +30,14 @@ table = {
 
 
 results = [
-    ((Country.NEW_ZEALAND, 7, Ground.AWAY), (Country.SOUTH_AFRICA, 35, Ground.AWAY)),
-    ((Country.SPAIN, 3, Ground.HOME), (Country.ARGENTIA, 62, Ground.AWAY)),
-    ((Country.IRELAND, 17, Ground.AWAY), (Country.SAMOA, 13, Ground.AWAY)),
-    ((Country.ITALY, 42, Ground.HOME), (Country.JAPAN, 21, Ground.AWAY)),
-    ((Country.SCOTLAND, 33, Ground.HOME), (Country.GEORGIA, 6, Ground.AWAY)),
-    ((Country.ENGLAND, 22, Ground.HOME), (Country.FIJI, 30, Ground.AWAY)),
-    ((Country.FRANCE, 41, Ground.HOME), (Country.AUSTRALIA, 17, Ground.AWAY)),
+    ((Country.NEW_ZEALAND, 13, Ground.AWAY), (Country.FRANCE, 27, Ground.HOME)),
+    ((Country.ITALY, 52, Ground.AWAY), (Country.NAMIBIA, 8, Ground.AWAY)),
+    ((Country.IRELAND, 82, Ground.AWAY), (Country.ROMANIA, 8, Ground.AWAY)),
+    ((Country.AUSTRALIA, 35, Ground.AWAY), (Country.GEORGIA, 15, Ground.AWAY)),
+    ((Country.ENGLAND, 27, Ground.AWAY), (Country.ARGENTIA, 10, Ground.AWAY)),
+    ((Country.JAPAN, 42, Ground.AWAY), (Country.CHILE, 12, Ground.AWAY)),
+    ((Country.SOUTH_AFRICA, 18, Ground.AWAY), (Country.SCOTLAND, 3, Ground.AWAY)),
+    ((Country.WALES, 32, Ground.AWAY), (Country.FIJI, 26, Ground.AWAY)),
 ]
 
 old_ranking = {
@@ -69,8 +72,12 @@ for fixture in results:
     table[a] = round(table[a] + a_pts, 2)
     table[b] = round(table[b] + b_pts, 2)
 
-for i, (k, v) in enumerate(reversed(sorted(table.items(), key=lambda x: x[1]))):
-    print(
-        f"{i + 1:3}. {k.value:15}{v:.2f}   "
-        f"({position_change(old_ranking[k.name], i+1):>2})"
-    )
+if FULL_TABLE:
+    for i, (k, v) in enumerate(reversed(sorted(table.items(), key=lambda x: x[1]))):
+        print(
+            f"{i + 1:3}. {k.value:15}{v:.2f}   "
+            f"({position_change(old_ranking[k.name], i+1):>2})"
+        )
+else:
+    for k, v in reversed(sorted(table.items(), key=lambda x: x[1])):
+        print(f"Country.{k.name}: {v:.2f},")
