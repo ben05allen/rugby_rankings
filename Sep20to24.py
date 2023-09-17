@@ -3,7 +3,30 @@ from static import Country, Ground
 
 FULL_TABLE = True
 
-table = {...}
+table = {
+    Country.IRELAND: 91.82,
+    Country.SOUTH_AFRICA: 91.37,
+    Country.FRANCE: 89.90,
+    Country.NEW_ZEALAND: 88.38,
+    Country.SCOTLAND: 83.72,
+    Country.ENGLAND: 81.85,
+    Country.FIJI: 80.25,
+    Country.AUSTRALIA: 79.65,
+    Country.WALES: 79.46,
+    Country.ARGENTIA: 79.22,
+    Country.SAMOA: 76.19,
+    Country.ITALY: 75.63,
+    Country.GEORGIA: 75.28,
+    Country.JAPAN: 73.03,
+    Country.TONGA: 70.29,
+    Country.PORTUGAL: 68.61,
+    Country.URUGUAY: 66.63,
+    Country.USA: 66.22,
+    Country.ROMANIA: 64.56,
+    Country.SPAIN: 64.05,
+    Country.NAMIBIA: 61.61,
+    Country.CHILE: 60.49,
+}
 
 
 results = [

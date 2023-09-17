@@ -35,9 +35,9 @@ results = [
     ((Country.SAMOA, 43, Ground.AWAY), (Country.CHILE, 10, Ground.AWAY)),
     ((Country.WALES, 28, Ground.AWAY), (Country.PORTUGAL, 8, Ground.AWAY)),
     ((Country.IRELAND, 59, Ground.AWAY), (Country.TONGA, 16, Ground.AWAY)),
-    ((Country.SOUTH_AFRICA, 0, Ground.AWAY), (Country.ROMANIA, 0, Ground.AWAY)),
-    ((Country.AUSTRALIA, 0, Ground.AWAY), (Country.FIJI, 0, Ground.AWAY)),
-    ((Country.ENGLAND, 0, Ground.AWAY), (Country.JAPAN, 0, Ground.AWAY)),
+    ((Country.SOUTH_AFRICA, 76, Ground.AWAY), (Country.ROMANIA, 0, Ground.AWAY)),
+    ((Country.AUSTRALIA, 15, Ground.AWAY), (Country.FIJI, 22, Ground.AWAY)),
+    ((Country.ENGLAND, 34, Ground.AWAY), (Country.JAPAN, 12, Ground.AWAY)),
 ]
 
 old_ranking = {
