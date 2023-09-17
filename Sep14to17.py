@@ -32,9 +32,9 @@ table = {
 results = [
     ((Country.URUGUAY, 12, Ground.AWAY), (Country.FRANCE, 27, Ground.HOME)),
     ((Country.NEW_ZEALAND, 71, Ground.AWAY), (Country.NAMIBIA, 3, Ground.AWAY)),
-    ((Country.SAMOA, 0, Ground.AWAY), (Country.CHILE, 0, Ground.AWAY)),
-    ((Country.WALES, 0, Ground.AWAY), (Country.PORTUGAL, 0, Ground.AWAY)),
-    ((Country.IRELAND, 0, Ground.AWAY), (Country.TONGA, 0, Ground.AWAY)),
+    ((Country.SAMOA, 43, Ground.AWAY), (Country.CHILE, 10, Ground.AWAY)),
+    ((Country.WALES, 28, Ground.AWAY), (Country.PORTUGAL, 8, Ground.AWAY)),
+    ((Country.IRELAND, 59, Ground.AWAY), (Country.TONGA, 16, Ground.AWAY)),
     ((Country.SOUTH_AFRICA, 0, Ground.AWAY), (Country.ROMANIA, 0, Ground.AWAY)),
     ((Country.AUSTRALIA, 0, Ground.AWAY), (Country.FIJI, 0, Ground.AWAY)),
     ((Country.ENGLAND, 0, Ground.AWAY), (Country.JAPAN, 0, Ground.AWAY)),
