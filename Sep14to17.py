@@ -5,18 +5,18 @@ FULL_TABLE = True
 
 table = {
     Country.IRELAND: 91.82,
-    Country.SOUTH_AFRICA: 91.37,
-    Country.FRANCE: 89.90,
-    Country.NEW_ZEALAND: 88.38,
-    Country.SCOTLAND: 83.72,
-    Country.ENGLAND: 81.59,
-    Country.AUSTRALIA: 80.82,
-    Country.WALES: 79.46,
-    Country.ARGENTIA: 79.22,
-    Country.FIJI: 79.08,
+    Country.SOUTH_AFRICA: 91.67,
+    Country.FRANCE: 90.59,
+    Country.NEW_ZEALAND: 87.69,
+    Country.SCOTLAND: 83.42,
+    Country.ENGLAND: 83.22,
+    Country.AUSTRALIA: 81.78,
+    Country.WALES: 80.66,
+    Country.FIJI: 77.88,
+    Country.ARGENTIA: 77.59,
     Country.SAMOA: 76.19,
     Country.ITALY: 75.63,
-    Country.GEORGIA: 75.28,
+    Country.GEORGIA: 74.32,
     Country.JAPAN: 73.29,
     Country.TONGA: 70.29,
     Country.PORTUGAL: 68.61,
@@ -65,7 +65,7 @@ for fixture in results:
         b_score,
         a_home.value,
         b_home.value,
-        is_rwc_final=False,
+        is_rwc_finals=True,
     )
     print(f"{a.name} - {a_score} ({a_pts}), {b.name} - {b_score} ({b_pts})")
 

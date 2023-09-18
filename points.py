@@ -10,7 +10,7 @@ def calculate_points(
     b_score: int,
     is_a_home: bool,
     is_b_home: bool,
-    is_rwc_final: bool,
+    is_rwc_finals: bool,
 ) -> (Decimal, Decimal):
     if not isinstance(a_rank, str):
         a_rank = str(a_rank)
@@ -26,7 +26,7 @@ def calculate_points(
     else:
         multiplier = Decimal("1.0")
 
-    if is_rwc_final:
+    if is_rwc_finals:
         multiplier *= Decimal("2.0")
 
     if is_a_home:

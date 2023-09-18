@@ -65,7 +65,7 @@ for fixture in results:
         b_score,
         a_home.value,
         b_home.value,
-        is_rwc_final=False,
+        is_rwc_finals=False,
     )
     print(f"{a.name} - {a_score} ({a_pts}), {b.name} - {b_score} ({b_pts})")
 

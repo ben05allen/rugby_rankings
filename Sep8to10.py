@@ -1,7 +1,7 @@
 from points import calculate_points
 from static import Country, Ground
 
-FULL_TABLE = True
+FULL_TABLE = False
 
 table = {
     Country.IRELAND: 91.82,
@@ -65,7 +65,7 @@ for fixture in results:
         b_score,
         a_home.value,
         b_home.value,
-        is_rwc_final=False,
+        is_rwc_finals=True,
     )
     print(f"{a.name} - {a_score} ({a_pts}), {b.name} - {b_score} ({b_pts})")
 

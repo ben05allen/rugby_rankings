@@ -29,19 +29,29 @@ table = {
 
 
 results = [
-    ((Country.WALES, 16, Ground.HOME),(Country.SOUTH_AFRICA, 52, Ground.AWAY)),
-    ((Country.IRELAND, 29, Ground.HOME),(Country.ENGLAND, 10, Ground.AWAY)),
-    ((Country.ITALY, 57, Ground.HOME),(Country.ROMANIA, 21, Ground.HOME)),
-    ((Country.FRANCE, 34, Ground.HOME),(Country.FIJI, 17, Ground.AWAY)),
+    ((Country.WALES, 16, Ground.HOME), (Country.SOUTH_AFRICA, 52, Ground.AWAY)),
+    ((Country.IRELAND, 29, Ground.HOME), (Country.ENGLAND, 10, Ground.AWAY)),
+    ((Country.ITALY, 57, Ground.HOME), (Country.ROMANIA, 21, Ground.HOME)),
+    ((Country.FRANCE, 34, Ground.HOME), (Country.FIJI, 17, Ground.AWAY)),
 ]
 
 for fixture in results:
     (a, a_score, a_home), (b, b_score, b_home) = fixture
-    a_pts, b_pts = calculate_points(table[a], table[b], a_score, b_score, a_home.value, b_home.value, is_rwc_final=False)
-    print(f'{a.name} {a_pts} {round(table[a] + a_pts, 2)}, {b.name} {b_pts} {round(table[b] + b_pts, 2)}')
+    a_pts, b_pts = calculate_points(
+        table[a],
+        table[b],
+        a_score,
+        b_score,
+        a_home.value,
+        b_home.value,
+        is_rwc_finals=False,
+    )
+    print(
+        f"{a.name} {a_pts} {round(table[a] + a_pts, 2)}, {b.name} {b_pts} {round(table[b] + b_pts, 2)}"
+    )
 
     table[a] = round(table[a] + a_pts, 2)
     table[b] = round(table[b] + b_pts, 2)
 
-for i, (k,v) in enumerate(reversed(sorted(table.items(), key=lambda x: x[1]))):
-    print(f'{i + 1}. {k.name} - {v}')
+for i, (k, v) in enumerate(reversed(sorted(table.items(), key=lambda x: x[1]))):
+    print(f"{i + 1}. {k.name} - {v}")
