@@ -31,8 +31,8 @@ table = {
 
 results = [
     ((Country.ITALY, 38, Ground.AWAY), (Country.URUGUAY, 17, Ground.AWAY)),
-    ((Country.NAMIBIA, 0, Ground.AWAY), (Country.FRANCE, 0, Ground.HOME)),
-    ((Country.SAMOA, 0, Ground.AWAY), (Country.ARGENTIA, 0, Ground.AWAY)),
+    ((Country.NAMIBIA, 0, Ground.AWAY), (Country.FRANCE, 96, Ground.HOME)),
+    ((Country.SAMOA, 10, Ground.AWAY), (Country.ARGENTIA, 19, Ground.AWAY)),
     ((Country.GEORGIA, 0, Ground.AWAY), (Country.PORTUGAL, 0, Ground.AWAY)),
     ((Country.ENGLAND, 0, Ground.AWAY), (Country.CHILE, 0, Ground.AWAY)),
     ((Country.IRELAND, 0, Ground.AWAY), (Country.SOUTH_AFRICA, 0, Ground.AWAY)),
@@ -65,7 +65,7 @@ for fixture in results:
         b_score,
         a_home.value,
         b_home.value,
-        is_rwc_finals=False,
+        is_rwc_finals=True,
     )
     print(f"{a.name} - {a_score} ({a_pts}), {b.name} - {b_score} ({b_pts})")
 
