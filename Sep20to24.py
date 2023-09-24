@@ -36,8 +36,8 @@ results = [
     ((Country.GEORGIA, 18, Ground.AWAY), (Country.PORTUGAL, 18, Ground.AWAY)),
     ((Country.ENGLAND, 71, Ground.AWAY), (Country.CHILE, 0, Ground.AWAY)),
     ((Country.IRELAND, 13, Ground.AWAY), (Country.SOUTH_AFRICA, 8, Ground.AWAY)),
-    # ((Country.SCOTLAND, 0, Ground.AWAY), (Country.TONGA, 0, Ground.AWAY)),
-    # ((Country.AUSTRALIA, 0, Ground.AWAY), (Country.WALES, 0, Ground.AWAY)),
+    ((Country.SCOTLAND, 45, Ground.AWAY), (Country.TONGA, 17, Ground.AWAY)),
+    ((Country.AUSTRALIA, 6, Ground.AWAY), (Country.WALES, 40, Ground.AWAY)),
 ]
 
 old_ranking = {
