@@ -3,41 +3,18 @@ from static import Country, Ground
 
 FULL_TABLE = True
 
-table = {
-    Country.IRELAND: 91.82,
-    Country.SOUTH_AFRICA: 91.67,
-    Country.FRANCE: 90.59,
-    Country.NEW_ZEALAND: 87.69,
-    Country.SCOTLAND: 83.43,
-    Country.ENGLAND: 83.24,
-    Country.FIJI: 80.66,
-    Country.WALES: 80.66,
-    Country.AUSTRALIA: 79.00,
-    Country.ARGENTIA: 77.59,
-    Country.SAMOA: 76.19,
-    Country.ITALY: 75.63,
-    Country.GEORGIA: 74.32,
-    Country.JAPAN: 73.27,
-    Country.TONGA: 70.29,
-    Country.PORTUGAL: 68.61,
-    Country.URUGUAY: 66.63,
-    Country.USA: 66.22,
-    Country.ROMANIA: 64.56,
-    Country.SPAIN: 64.05,
-    Country.NAMIBIA: 61.61,
-    Country.CHILE: 60.49,
-}
+table = {}
 
 
 results = [
-    ((Country.ITALY, 38, Ground.AWAY), (Country.URUGUAY, 17, Ground.AWAY)),
-    ((Country.NAMIBIA, 0, Ground.AWAY), (Country.FRANCE, 96, Ground.HOME)),
-    ((Country.SAMOA, 10, Ground.AWAY), (Country.ARGENTIA, 19, Ground.AWAY)),
-    ((Country.GEORGIA, 18, Ground.AWAY), (Country.PORTUGAL, 18, Ground.AWAY)),
-    ((Country.ENGLAND, 71, Ground.AWAY), (Country.CHILE, 0, Ground.AWAY)),
-    ((Country.IRELAND, 13, Ground.AWAY), (Country.SOUTH_AFRICA, 8, Ground.AWAY)),
-    # ((Country.SCOTLAND, 0, Ground.AWAY), (Country.TONGA, 0, Ground.AWAY)),
-    # ((Country.AUSTRALIA, 0, Ground.AWAY), (Country.WALES, 0, Ground.AWAY)),
+    # ((Country.NAMIBIA, 0, Ground.AWAY), (Country.URUGUAY, 0, Ground.AWAY)),
+    # ((Country.SAMOA, 0, Ground.AWAY), (Country.JAPAN, 0, Ground.AWAY)),
+    # ((Country.ITALY, 0, Ground.AWAY), (Country.NEW_ZEALAND, 0, Ground.AWAY)),
+    # ((Country.ARGENTIA, 0, Ground.AWAY), (Country.CHILE, 0, Ground.AWAY)),
+    # ((Country.GEORGIA, 0, Ground.AWAY), (Country.FIJI, 0, Ground.AWAY)),
+    # ((Country.SCOTLAND, 0, Ground.AWAY), (Country.ROMANIA, 0, Ground.AWAY)),
+    # ((Country.AUSTRALIA, 0, Ground.AWAY), (Country.PORTUGAL, 0, Ground.AWAY)),
+    # ((Country.TONGA, 0, Ground.AWAY), (Country.SOUTH_AFRICA, 0, Ground.AWAY)),
 ]
 
 old_ranking = {
