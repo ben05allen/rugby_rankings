@@ -33,9 +33,9 @@ results = [
     ((Country.ITALY, 38, Ground.AWAY), (Country.URUGUAY, 17, Ground.AWAY)),
     ((Country.NAMIBIA, 0, Ground.AWAY), (Country.FRANCE, 96, Ground.HOME)),
     ((Country.SAMOA, 10, Ground.AWAY), (Country.ARGENTIA, 19, Ground.AWAY)),
-    ((Country.GEORGIA, 0, Ground.AWAY), (Country.PORTUGAL, 0, Ground.AWAY)),
-    ((Country.ENGLAND, 0, Ground.AWAY), (Country.CHILE, 0, Ground.AWAY)),
-    ((Country.IRELAND, 0, Ground.AWAY), (Country.SOUTH_AFRICA, 0, Ground.AWAY)),
+    ((Country.GEORGIA, 18, Ground.AWAY), (Country.PORTUGAL, 18, Ground.AWAY)),
+    ((Country.ENGLAND, 71, Ground.AWAY), (Country.CHILE, 0, Ground.AWAY)),
+    ((Country.IRELAND, 13, Ground.AWAY), (Country.SOUTH_AFRICA, 8, Ground.AWAY)),
     ((Country.SCOTLAND, 0, Ground.AWAY), (Country.TONGA, 0, Ground.AWAY)),
     ((Country.AUSTRALIA, 0, Ground.AWAY), (Country.WALES, 0, Ground.AWAY)),
 ]
