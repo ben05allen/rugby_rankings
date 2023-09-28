@@ -10,7 +10,7 @@ table = {
     Country.NEW_ZEALAND: 87.69,
     Country.SCOTLAND: 83.43,
     Country.ENGLAND: 83.24,
-    Country.WALES: 83.16,
+    Country.WALES: 83.17,
     Country.FIJI: 80.66,
     Country.ARGENTIA: 79.31,
     Country.AUSTRALIA: 76.50,
@@ -30,7 +30,7 @@ table = {
 
 
 results = [
-    # ((Country.NAMIBIA, 0, Ground.AWAY), (Country.URUGUAY, 0, Ground.AWAY)),
+    ((Country.NAMIBIA, 26, Ground.AWAY), (Country.URUGUAY, 36, Ground.AWAY)),
     # ((Country.SAMOA, 0, Ground.AWAY), (Country.JAPAN, 0, Ground.AWAY)),
     # ((Country.ITALY, 0, Ground.AWAY), (Country.NEW_ZEALAND, 0, Ground.AWAY)),
     # ((Country.ARGENTIA, 0, Ground.AWAY), (Country.CHILE, 0, Ground.AWAY)),
