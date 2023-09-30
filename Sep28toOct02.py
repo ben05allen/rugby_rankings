@@ -32,7 +32,7 @@ table = {
 results = [
     ((Country.NAMIBIA, 26, Ground.AWAY), (Country.URUGUAY, 36, Ground.AWAY)),
     ((Country.SAMOA, 22, Ground.AWAY), (Country.JAPAN, 28, Ground.AWAY)),
-    # ((Country.ITALY, 0, Ground.AWAY), (Country.NEW_ZEALAND, 0, Ground.AWAY)),
+    ((Country.ITALY, 17, Ground.AWAY), (Country.NEW_ZEALAND, 96, Ground.AWAY)),
     # ((Country.ARGENTIA, 0, Ground.AWAY), (Country.CHILE, 0, Ground.AWAY)),
     # ((Country.GEORGIA, 0, Ground.AWAY), (Country.FIJI, 0, Ground.AWAY)),
     # ((Country.SCOTLAND, 0, Ground.AWAY), (Country.ROMANIA, 0, Ground.AWAY)),
