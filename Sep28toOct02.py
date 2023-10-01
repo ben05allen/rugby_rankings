@@ -1,7 +1,7 @@
 from points import calculate_points
 from static import Country, Ground
 
-FULL_TABLE = True
+FULL_TABLE = False
 
 table = {
     Country.IRELAND: 93.79,
@@ -36,8 +36,8 @@ results = [
     ((Country.ARGENTIA, 59, Ground.AWAY), (Country.CHILE, 5, Ground.AWAY)),
     ((Country.GEORGIA, 12, Ground.AWAY), (Country.FIJI, 17, Ground.AWAY)),
     ((Country.SCOTLAND, 84, Ground.AWAY), (Country.ROMANIA, 0, Ground.AWAY)),
-    # ((Country.AUSTRALIA, 0, Ground.AWAY), (Country.PORTUGAL, 0, Ground.AWAY)),
-    # ((Country.TONGA, 0, Ground.AWAY), (Country.SOUTH_AFRICA, 0, Ground.AWAY)),
+    ((Country.AUSTRALIA, 34, Ground.AWAY), (Country.PORTUGAL, 14, Ground.AWAY)),
+    ((Country.TONGA, 18, Ground.AWAY), (Country.SOUTH_AFRICA, 49, Ground.AWAY)),
 ]
 
 old_ranking = {
