@@ -30,7 +30,7 @@ table = {
 
 
 results = [
-    # ((Country.NEW_ZEALAND, 0, Ground.AWAY), (Country.URUGUAY, 0, Ground.AWAY)),
+    ((Country.NEW_ZEALAND, 73, Ground.AWAY), (Country.URUGUAY, 0, Ground.AWAY)),
     # ((Country.ITALY, 0, Ground.AWAY), (Country.FRANCE, 0, Ground.HOME)),
     # ((Country.GEORGIA, 0, Ground.AWAY), (Country.WALES, 0, Ground.AWAY)),
     # ((Country.SAMOA, 0, Ground.AWAY), (Country.ENGLAND, 0, Ground.AWAY)),
