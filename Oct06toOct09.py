@@ -35,7 +35,7 @@ results = [
     ((Country.GEORGIA, 19, Ground.AWAY), (Country.WALES, 43, Ground.AWAY)),
     ((Country.SAMOA, 17, Ground.AWAY), (Country.ENGLAND, 18, Ground.AWAY)),
     ((Country.SCOTLAND, 14, Ground.AWAY), (Country.IRELAND, 36, Ground.AWAY)),
-    # ((Country.ARGENTIA, 0, Ground.AWAY), (Country.JAPAN, 0, Ground.AWAY)),
+    ((Country.ARGENTIA, 39, Ground.AWAY), (Country.JAPAN, 27, Ground.AWAY)),
     # ((Country.TONGA, 0, Ground.AWAY), (Country.ROMANIA, 0, Ground.AWAY)),
     # ((Country.FIJI, 0, Ground.AWAY), (Country.PORTUGAL, 0, Ground.AWAY)),
 ]
