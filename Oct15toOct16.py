@@ -11,33 +11,29 @@ table = {
     Country.SCOTLAND: 83.43,
     Country.ENGLAND: 83.24,
     Country.WALES: 83.17,
-    Country.FIJI: 81.16,
-    Country.ARGENTIA: 79.31,
+    Country.ARGENTIA: 80.55,
     Country.AUSTRALIA: 77.48,
+    Country.FIJI: 77.16,
     Country.ITALY: 75.93,
-    Country.JAPAN: 75.51,
+    Country.JAPAN: 74.27,
+    Country.PORTUGAL: 72.77,
     Country.GEORGIA: 72.68,
     Country.SAMOA: 72.23,
-    Country.TONGA: 70.29,
-    Country.PORTUGAL: 68.77,
+    Country.TONGA: 71.57,
     Country.URUGUAY: 67.39,
     Country.USA: 66.22,
-    Country.ROMANIA: 64.56,
     Country.SPAIN: 64.05,
+    Country.ROMANIA: 63.28,
     Country.NAMIBIA: 60.55,
     Country.CHILE: 60.49,
 }
 
 
 results = [
-    ((Country.NEW_ZEALAND, 73, Ground.AWAY), (Country.URUGUAY, 0, Ground.AWAY)),
-    ((Country.ITALY, 7, Ground.AWAY), (Country.FRANCE, 60, Ground.HOME)),
-    ((Country.GEORGIA, 19, Ground.AWAY), (Country.WALES, 43, Ground.AWAY)),
-    ((Country.SAMOA, 17, Ground.AWAY), (Country.ENGLAND, 18, Ground.AWAY)),
-    ((Country.SCOTLAND, 14, Ground.AWAY), (Country.IRELAND, 36, Ground.AWAY)),
-    ((Country.ARGENTIA, 39, Ground.AWAY), (Country.JAPAN, 27, Ground.AWAY)),
-    ((Country.TONGA, 45, Ground.AWAY), (Country.ROMANIA, 24, Ground.AWAY)),
-    ((Country.FIJI, 23, Ground.AWAY), (Country.PORTUGAL, 24, Ground.AWAY)),
+    # ((Country.WALES, 0, Ground.AWAY), (Country.ARGENTIA, 0, Ground.AWAY)),
+    # ((Country.IRELAND, 0, Ground.AWAY), (Country.NEW_ZEALAND, 0, Ground.AWAY)),
+    # ((Country.ENGLAND, 0, Ground.AWAY), (Country.FIJI, 0, Ground.AWAY)),
+    # ((Country.FRANCE, 0, Ground.HOME), (Country.SOUTH_AFRICA, 0, Ground.HOME)),
 ]
 
 old_ranking = {
