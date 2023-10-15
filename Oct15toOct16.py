@@ -1,7 +1,7 @@
 from points import calculate_points
 from static import Country, Ground
 
-FULL_TABLE = False
+FULL_TABLE = True
 
 table = {
     Country.IRELAND: 93.79,
@@ -30,8 +30,8 @@ table = {
 
 
 results = [
-    # ((Country.WALES, 0, Ground.AWAY), (Country.ARGENTIA, 0, Ground.AWAY)),
-    # ((Country.IRELAND, 0, Ground.AWAY), (Country.NEW_ZEALAND, 0, Ground.AWAY)),
+    ((Country.WALES, 17, Ground.AWAY), (Country.ARGENTIA, 29, Ground.AWAY)),
+    ((Country.IRELAND, 24, Ground.AWAY), (Country.NEW_ZEALAND, 28, Ground.AWAY)),
     # ((Country.ENGLAND, 0, Ground.AWAY), (Country.FIJI, 0, Ground.AWAY)),
     # ((Country.FRANCE, 0, Ground.HOME), (Country.SOUTH_AFRICA, 0, Ground.HOME)),
 ]
