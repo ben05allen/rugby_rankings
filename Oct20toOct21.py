@@ -1,19 +1,19 @@
 from points import calculate_points
 from static import Country, Ground
 
-FULL_TABLE = False
+FULL_TABLE = True
 
 table = {
-    Country.IRELAND: 93.79,
-    Country.FRANCE: 90.59,
-    Country.SOUTH_AFRICA: 89.70,
-    Country.NEW_ZEALAND: 87.69,
+    Country.SOUTH_AFRICA: 91.88,
+    Country.NEW_ZEALAND: 90.91,
+    Country.IRELAND: 90.57,
+    Country.FRANCE: 88.41,
+    Country.ENGLAND: 84.02,
     Country.SCOTLAND: 83.43,
-    Country.ENGLAND: 83.24,
-    Country.WALES: 83.17,
-    Country.ARGENTIA: 80.55,
+    Country.ARGENTIA: 83.07,
+    Country.WALES: 80.65,
     Country.AUSTRALIA: 77.48,
-    Country.FIJI: 77.16,
+    Country.FIJI: 76.38,
     Country.ITALY: 75.93,
     Country.JAPAN: 74.27,
     Country.PORTUGAL: 72.78,
@@ -30,10 +30,8 @@ table = {
 
 
 results = [
-    ((Country.WALES, 17, Ground.AWAY), (Country.ARGENTIA, 29, Ground.AWAY)),
-    ((Country.IRELAND, 24, Ground.AWAY), (Country.NEW_ZEALAND, 28, Ground.AWAY)),
-    ((Country.ENGLAND, 30, Ground.AWAY), (Country.FIJI, 24, Ground.AWAY)),
-    ((Country.FRANCE, 28, Ground.HOME), (Country.SOUTH_AFRICA, 29, Ground.HOME)),
+    # ((Country.ARGENTIA, 0, Ground.AWAY), (Country.NEW_ZEALAND, 0, Ground.AWAY)),
+    # ((Country.ENGLAND, 0, Ground.HOME), (Country.SOUTH_AFRICA, 0, Ground.HOME)),
 ]
 
 old_ranking = {
