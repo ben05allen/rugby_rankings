@@ -4,11 +4,11 @@ from static import Country, Ground
 FULL_TABLE = True
 
 table = {
-    Country.SOUTH_AFRICA: 91.88,
+    Country.SOUTH_AFRICA: 92.48,
     Country.NEW_ZEALAND: 90.91,
     Country.IRELAND: 90.57,
-    Country.FRANCE: 88.41,
-    Country.ENGLAND: 84.02,
+    Country.FRANCE: 87.81,
+    Country.ENGLAND: 84.03,
     Country.SCOTLAND: 83.43,
     Country.ARGENTIA: 83.07,
     Country.WALES: 80.65,
@@ -31,7 +31,7 @@ table = {
 
 results = [
     ((Country.ARGENTIA, 6, Ground.AWAY), (Country.NEW_ZEALAND, 44, Ground.AWAY)),
-    # ((Country.ENGLAND, 0, Ground.HOME), (Country.SOUTH_AFRICA, 0, Ground.HOME)),
+    ((Country.ENGLAND, 15, Ground.AWAY), (Country.SOUTH_AFRICA, 16, Ground.AWAY)),
 ]
 
 old_ranking = {
