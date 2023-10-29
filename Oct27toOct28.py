@@ -31,7 +31,7 @@ table = {
 
 results = [
     ((Country.ARGENTIA, 23, Ground.AWAY), (Country.ENGLAND, 26, Ground.AWAY)),
-    # ((Country.NEW_ZEALAND, 0, Ground.AWAY), (Country.SOUTH_AFRICA, 0, Ground.AWAY)),
+    ((Country.NEW_ZEALAND, 11, Ground.AWAY), (Country.SOUTH_AFRICA, 12, Ground.AWAY)),
 ]
 
 old_ranking = {
